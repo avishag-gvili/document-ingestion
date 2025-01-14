@@ -38,9 +38,11 @@ The response will be something like this:
 {
     "status": "processing"
 }
+
 4. If You Need to Restart the Containers
 If you need to stop and restart the containers, use the following commands:
 
 
 docker-compose down
+
 docker-compose up --build

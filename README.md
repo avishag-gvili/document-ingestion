@@ -19,25 +19,35 @@ git clone https://github.com/avishag-gvili/document-ingestion.git
 To start all the containers (Node.js, Python, PostgreSQL, RabbitMQ), use the following command:
 
 docker-compose up --build
+
 This command will build and start the required containers.
 
 ### 3. Send Data with POSTMAN or Command Line
+
 Uploading a File Request:
+
 URL: http://localhost:3000/upload
+
 Method: POST
+
 In POSTMAN, use the FORM-DATA type to upload a file.
 
 If you prefer to send the request via the command line, use the following command:
 
 curl -X POST -F "file=@/path/to/your/file.xlsx" http://localhost:3000/upload
+
 The system will return the document ID (document_id), which will be stored in the database.
 
 Checking Document Status
+
 URL: http://localhost:3000/status/:id
+
 Method: GET
+
 Check the status of the document after uploading:
 
 curl http://localhost:3000/status/1
+
 The response will be something like this:
 
 
@@ -47,6 +57,7 @@ The response will be something like this:
 
 
 4. If You Need to Restart the Containers
+
 If you need to stop and restart the containers, use the following commands:
 
 

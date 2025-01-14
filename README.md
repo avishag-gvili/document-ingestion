@@ -1,4 +1,4 @@
-Document Processing System - README
+##Document Processing System - README
 This system includes all the necessary steps to run the services, send API requests, and test the system.
 
 Prerequisites
